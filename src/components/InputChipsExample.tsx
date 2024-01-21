@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import {StyleSheet, TextInput} from 'react-native';
 
 import Text from './common/Text';
-import {ChipsType} from 'react-native-material-chips/types';
 
 const InputChipsExample = () => {
   const [value, setValue] = useState('');
@@ -25,7 +24,7 @@ const InputChipsExample = () => {
         }}
       />
       <Chips
-        type={ChipsType.Input}
+        type="input"
         items={items}
         setItems={setItems}
         itemVariant="outlined"

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {Chips} from 'react-native-material-chips';
-import {ChipsType} from 'react-native-material-chips/types';
 
 import Text from './common/Text';
 
@@ -19,7 +18,7 @@ const FilterChipsExample = () => {
     <>
       <Text variant="subtitle" content="Filter" />
       <Chips
-        type={ChipsType.Filter}
+        type="filter"
         itemVariant="outlined"
         items={items}
         setItems={setItems}
